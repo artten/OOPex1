@@ -10,7 +10,6 @@ public class SumDiv {
         int b = sc.nextInt();
         int c = sc.nextInt();
         int sum = 0;
-        System.out.println(".");
         for(int i=1;i < a;i++){
             if(i%b==0 || i%c==0){
                 System.out.println(i);

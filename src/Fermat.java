@@ -16,18 +16,18 @@ public class Fermat {
         System.out.print("Input:");
         int n = sc.nextInt();
         int range = sc.nextInt();
-        int not_found = 0;
+        int notFound = 0;
         for(int i = 1; i < range ;i++){
             for(int j = i; j < range ;j++){
                 for(int k = j; k < range ;k++){
                     if(power(i,n) + power(j,n) == power(k,n)){
-                        not_found++;
+                        notFound++;
                         System.out.println(i+","+j+","+k);
                     }
                 }
             }
         }
-        if (not_found==0){
+        if (notFound==0){
             System.out.println("no");
         }
     }
