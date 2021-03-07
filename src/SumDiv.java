@@ -1,4 +1,4 @@
-/**
+/*
  * @author Artiom Divak
  */
 import java.util.*;

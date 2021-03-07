@@ -1,4 +1,4 @@
-/**
+/*
  * @author Artiom Divak
  */
 import java.util.*;
@@ -17,9 +17,9 @@ public class Str {
         String sentence = parts[1];
         parts = sentence.split("_");
         System.out.print("Output:");
-        for(int i =0; i < parts.length; i++){
-            if(parts[i].contains(findStr)){
-                System.out.println(parts[i]);
+        for(String word: parts){
+            if(word.contains(findStr)){
+                System.out.println(word);
             }
         }
 
