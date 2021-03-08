@@ -1,7 +1,6 @@
 /*
  * @author Artiom Divak
  */
-import java.util.*;
 
 public class Fermat {
     public static int power(int num, int pow){
@@ -12,10 +11,13 @@ public class Fermat {
         return sum;
     }
     public static void main(String[] args) {
-        Scanner sc= new Scanner(System.in);
-        System.out.print("Input:");
-        int n = sc.nextInt();
-        int range = sc.nextInt();
+        if(args.length != 2){
+            return;
+        }
+//        Scanner sc= new Scanner(System.in);
+//        System.out.print("Input:");
+        int n = Integer.parseInt(args[0]);
+        int range = Integer.parseInt(args[1]);
         int notFound = 0;
         for(int i = 1; i < range ;i++){
             for(int j = i; j < range ;j++){
