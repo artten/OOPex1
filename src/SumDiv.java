@@ -1,5 +1,5 @@
 /*
- * @author Artiom Divak
+ * @author 319339198
  */
 
 public class SumDiv {
