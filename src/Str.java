@@ -3,7 +3,7 @@
  */
 public class Str {
     public static void main(String[] args) {
-        if(args.length != 1){
+        if (args.length != 1) {
             System.out.println("Invalid input");
             return;
         }
@@ -16,7 +16,7 @@ public class Str {
             return;
         }*/
         String[] parts = args[0].split(",");
-        if(parts.length != 2){
+        if (parts.length != 2) {
             System.out.println("Invalid input");
             return;
         }
@@ -24,8 +24,8 @@ public class Str {
         String sentence = parts[1];
         parts = sentence.split("_");
         System.out.print("Output:");
-        for(String word: parts){
-            if(word.contains(findStr)){
+        for (String word: parts) {
+            if (word.contains(findStr)) {
                 System.out.println(word);
             }
         }
