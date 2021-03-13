@@ -1,29 +1,18 @@
-/*
+/**
  * @author 319339198
  */
 public class Str {
     public static void main(String[] args) {
-        if (args.length != 1) {
+        /**
+         * @param args - contains sentence and query
+         */
+        if (args.length != 2) {
             System.out.println("Invalid input");
             return;
         }
-        //Scanner sc= new Scanner(System.in);
-        //System.out.print("Input:");
-/*        String userInput = sc.nextLine();
-        String[] parts = userInput.split(",");
-        if(parts.length != 2){
-            System.out.println("Invalid input");
-            return;
-        }*/
-        String[] parts = args[0].split(",");
-        if (parts.length != 2) {
-            System.out.println("Invalid input");
-            return;
-        }
-        String findStr = parts[0];
-        String sentence = parts[1];
-        parts = sentence.split("_");
-        System.out.print("Output:");
+        String findStr = args[0];
+        String sentence = args[1];
+        String[] parts = sentence.split("_");
         for (String word: parts) {
             if (word.contains(findStr)) {
                 System.out.println(word);
