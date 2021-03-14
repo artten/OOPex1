@@ -1,12 +1,15 @@
 /**
  * @author 319339198
  */
-
 public class SumDiv {
+    /**
+     * receives 3 positive Integers 'a,b,c' as arguments and prints
+     * out the numbers between 1 and 'a' (including “a” itself)
+     * that is divisible by b or c.
+     *
+     * @param args - contains 3 numbers
+     */
     public static void main(String[] args) {
-        /**
-         * @param args - contains 3 numbers
-         */
         if (args.length != 3) {
             return;
         }
@@ -14,7 +17,7 @@ public class SumDiv {
         int b = Integer.parseInt(args[1]);
         int c = Integer.parseInt(args[2]);
         int sum = 0;
-        if (a < 1 && b < 1 && c < 1 ) {
+        if (a < 1 && b < 1 && c < 1) {
             return;
         }
         for (int i = 1; i <= a; i++) {
