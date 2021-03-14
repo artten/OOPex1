@@ -11,13 +11,15 @@ public class SumDiv {
      */
     public static void main(String[] args) {
         if (args.length != 3) {
+            System.out.println("Invalid input");
             return;
         }
         int a = Integer.parseInt(args[0]);
         int b = Integer.parseInt(args[1]);
         int c = Integer.parseInt(args[2]);
         int sum = 0;
-        if (a < 1 && b < 1 && c < 1) {
+        if (a < 1 || b < 1 || c < 1) {
+            System.out.println("Invalid input");
             return;
         }
         for (int i = 1; i <= a; i++) {

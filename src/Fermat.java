@@ -19,6 +19,7 @@ public class Fermat {
      */
     public static void main(String[] args) {
         if (args.length != 2) {
+            System.out.println("Invalid input");
             return;
         }
         int n = Integer.parseInt(args[0]);
