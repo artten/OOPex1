@@ -26,10 +26,16 @@ public class Str {
         String sentence = args[1];
         String[] parts = sentence.split(UNDER_SCORE);
         for (String word: parts) {
-            if (word.contains(findStr)) {
+            if (word.startsWith(findStr)) {
                 System.out.println(word);
             }
         }
+        for (String word: parts) {
+            if (word.contains(findStr) && !word.startsWith(findStr)) {
+                System.out.println(word);
+            }
+        }
+
 
 
     }

@@ -25,7 +25,7 @@ public class Fermat {
         int n = Integer.parseInt(args[0]);
         int range = Integer.parseInt(args[1]);
         if (range < 1 || n < 1) {
-            System.out.println("Invalid number");
+            System.out.println("Invalid input");
             return;
         }
         int notFound = 0;
